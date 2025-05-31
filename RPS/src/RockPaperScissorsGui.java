@@ -15,7 +15,7 @@ public class RockPaperScissorsGui extends JFrame implements ActionListener{
     //MAKE THE PLAYER BUTTONS AS GLOBAL CAUSE they can use a single ActionPerformed()
     JButton rockButton,scissorsButton,paperButton;
     JLabel computerChoice;
-    // display the score of teh cpmputer and the player
+    // display the score of the computer and the player
     JLabel computerScoreLabel, playerScoreLabel;
 
     //backend obj
@@ -32,10 +32,10 @@ public class RockPaperScissorsGui extends JFrame implements ActionListener{
         //set layout to null
         setLayout(null);
 
-        //load GUI at the centre of the screen everytime we open the application
+        //load GUI at the centre of the screen every time we open the application
         setLocationRelativeTo(null);
 
-        //initialize the backnd componenets
+        //initialize the backnd components
         rockPaperScissor=new RockPaperScissor();
 
         //add GUI components
@@ -50,13 +50,13 @@ public class RockPaperScissorsGui extends JFrame implements ActionListener{
         //set x,y coordinates and height width values
         computerScoreLabel.setBounds(0,43,450,30);
 
-        //set the font ,fontweight,etc
+        //set the font ,FONT_WEIGHT,etc
         computerScoreLabel.setFont(new Font("Dialog",Font.BOLD,26));
         
         //place text in center
         computerScoreLabel.setHorizontalAlignment(SwingConstants.CENTER);
 
-        //addttoGUI to display the components
+        //addToGUI to display the components
         add(computerScoreLabel);
 
         //create computer choice to display the computers result
